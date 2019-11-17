@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link rel="stylesheet" href="/static/css/style_1.css">
-        <meta charset="UTF-8">
-        <title>Hi there!</title>
-    </head>
+{% extends "base.html" %}
 
-    <body>
-        <h1>Welcome back</h1>
-        <img src="/static/img/smartninja.png">
-    </body>
-</html>
+{% block content %}
+    <p>Hello, index.html here!</p>
+
+    <p>{{some_text}}</p>
+    <p>Current year: {{current_year}}</p>
+{% endblock content %}
