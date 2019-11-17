@@ -8,8 +8,10 @@ app = Flask (__name__)
 def index():
     some_text = "Message from the handler."
     current_year = datetime.datetime.now().year
-    return render_template("index.html", some_text=some_text, current_year=current_year)
-    return render_template("index.html")
+
+    cities = ["Boston", "Vienna", "Paris", "Berlin"]
+
+    return render_template("index.html", some_text=some_text, current_year=current_year, cities=cities)
 
 @app.route("/boogle")
 def about_me():
