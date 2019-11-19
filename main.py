@@ -25,7 +25,10 @@ def contact():
         return response
 
 
-@app.route("/")
+@app.route("/about-me")
+def about_me():
+    return render_template("about.html")
+
 @app.route("/")
 def index():
     return render_template("index.html")
