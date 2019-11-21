@@ -25,8 +25,8 @@ def contact():
         return response
 
 
-@app.route("/about-me")
-def about_me():
+@app.route("/about-me", methods=["GET"])
+def about():
     return render_template("about.html")
 
 @app.route("/")

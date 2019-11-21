@@ -3,6 +3,18 @@
 {% block title %}About me{% endblock title %}
 
 {% block content %}
-    <h1>My names is Pablo Durán</h1>
-    <a href="/">Home</a>
+
+    <form method="post" action="/contact">
+    <input type="text" name="contact-name" placeholder="Enter your name">
+    <br>
+
+    <input type="email" name="contact-email" placeholder="Enter email address">
+    <br>
+
+    <textarea name="contact-message" placeholder="Enter your message"></textarea>
+    <br>
+
+    <button type="submit">Submit</button>
+</form>
+
 {% endblock content %}
